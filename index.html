@@ -2,16 +2,17 @@
 <html lang="en-us">
 
 <head>
-    <meta charset="UTF-8" />
+    <meta charset="UTF-8"/>
     <link rel="stylesheet" href="./assets/css/style.css">
-    <title>website</title>
+    <title>Horiseon Serivces: SEO, Social Media Marketing, Online Reputation Management</title>
 </head>
 
 <body>
-    <div class="header">
-        <h1>Hori<span class="seo">seo</span>n</h1>
-        <div>
-            <ul>
+    <!-- Replaced div element with nav in header for accessibility-->
+    <header>
+      <h1>Hori<span class="seo">seo</span>n</h1>
+        <nav>
+           <ul>
                 <li>
                     <a href="#search-engine-optimization">Search Engine Optimization</a>
                 </li>
@@ -22,9 +23,12 @@
                     <a href="#social-media-marketing">Social Media Marketing</a>
                 </li>
             </ul>
-        </div>
-    </div>
-    <div class="hero"></div>
+        </nav>
+    </header>
+
+<!--Changed class to header-image so it's easier to know what this section is-->
+    <article class="header-image"></article>
+
     <div class="content">
         <div class="search-engine-optimization">
             <img src="./assets/images/search-engine-optimization.jpg" class="float-left" />
@@ -71,12 +75,13 @@
             </p>
         </div>
     </div>
-    <div class="footer">
+    <!--Replaced div element with footer element for accessibilty-->
+    <footer>
         <h2>Made with ❤️️ by Horiseon</h2>
         <p>
             &copy; 2019 Horiseon Social Solution Services, Inc.
         </p>
-    </div>
+    </footer>
 </body>
 
 </html>
