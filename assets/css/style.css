@@ -21,15 +21,15 @@ header {
     color: #ffffff;
 }
 
-/* Inline-block value lets us generate a horizontal element box as opposed to 
-vertical one*/
-header h1 {
+/* Removed unnecessary use of selector grouping 
+and simply styled h1 element*/
+h1 {
     display: inline-block;
     font-size: 48px;
 }
 
 /*Inline element <span> used to get multiple font colors in single word*/
-header h1 .seo {
+h1 .seo {
     color: #d9dcd6;
 }
 
@@ -72,82 +72,15 @@ p {
     font-size: 16px;
 }
 
-.float-left {
-    float: left;
-    margin-right: 25px;
-}
-
-.float-right {
-    float: right;
-    margin-left: 25px;
-}
-
 .content {
     width: 75%; 
     display: inline-block;
     margin-left: 20px;
 }
 
-.benefits {
-    margin-right: 20px;
-    padding: 20px;
-    clear: both;
-    float: right;
-    width: 20%;
-    height: 100%;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background-color: #2589bd;
-}
-
-.benefit-lead {
-    margin-bottom: 32px;
-    color: #ffffff;
-}
-
-.benefit-brand {
-    margin-bottom: 32px;
-    color: #ffffff;
-}
-
-.benefit-cost {
-    margin-bottom: 32px;
-    color: #ffffff;
-}
-
-.benefit-lead h3 {
-    margin-bottom: 10px;
-    text-align: center;
-}
-
-.benefit-brand h3 {
-    margin-bottom: 10px;
-    text-align: center;
-}
-
-.benefit-cost h3 {
-    margin-bottom: 10px;
-    text-align: center;
-}
-
-.benefit-lead img {
-    display: block;
-    margin: 10px auto;
-    max-width: 150px;
-}
-
-.benefit-brand img {
-    display: block;
-    margin: 10px auto;
-    max-width: 150px;
-}
-
-.benefit-cost img {
-    display: block;
-    margin: 10px auto;
-    max-width: 150px;
-}
-
-.search-engine-optimization {
+/*Condsolidated styling for the 3 classes below 
+to make code cleaner and get rid of unnecessary repetition*/
+.search-engine-optimization, .online-reputation-management, .social-media-marketing {
     margin-bottom: 20px;
     padding: 50px;
     height: 300px;
@@ -156,55 +89,71 @@ p {
     color: #ffffff;
 }
 
-.online-reputation-management {
+/*Consolidated styling for the 3 images below to make
+code cleaner and get rid of unnecessary repetition*/
+.search-engine-optimization img, .online-reputation-management img, .social-media-marketing img {
+    max-height: 200px;
+}
+
+/*Removed unnecessary repetitive coding by consolidating
+all h2 styling under single h2 selector*/
+h2 {
     margin-bottom: 20px;
-    padding: 50px;
-    height: 300px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background-color: #0072bb;
+    font-size: 36px;
+}
+
+/*Float image to left of container so text wraps around it*/
+.float-left {
+    float: left;
+    margin-right: 25px;
+}
+
+/*Float image to right of container so text wraps around it*/
+.float-right {
+    float: right;
+    margin-left: 25px;
+}
+
+/*Removed unnecessary use of class and styled 'aside' element instead.
+Using 'aside' instead of generic div or section elements helps makes styling
+easier to do for us and easier for future developers to understand*/
+aside {
+    margin-right: 20px;
+    padding: 20px;
+    clear: both;
+    float: right;
+    width: 20%;
+    height: 100%;
+    font-family: 'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', 'sans-serif';
+    background-color: #2589bd;
+}
+
+/*Consolidated styling for the 3 classes below to make
+code cleaner and get rid of unnecessary repetition*/
+.benefit-lead, .benefit-cost, .benefit-brand {
+    margin-bottom: 32px;
     color: #ffffff;
 }
 
-.social-media-marketing {
-    margin-bottom: 20px;
-    padding: 50px;
-    height: 300px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background-color: #0072bb;
-    color: #ffffff;
+/*Removed unnecessary repetitive coding by consolidating all h3
+styling under single h3 selector*/
+h3 {
+    margin-bottom: 10px;
+    text-align: center;
 }
 
-.search-engine-optimization img {
-    max-height: 200px;
-}
-
-.online-reputation-management img {
-    max-height: 200px;
-}
-
-.social-media-marketing img {
-    max-height: 200px;
-}
-
-.search-engine-optimization h2 {
-    margin-bottom: 20px;
-    font-size: 36px;
-}
-
-.online-reputation-management h2 {
-    margin-bottom: 20px;
-    font-size: 36px;
-}
-
-.social-media-marketing h2 {
-    margin-bottom: 20px;
-    font-size: 36px;
+/*Consolidated styling for the 3 images below to make
+code cleaner and get rid of unnecessary repetition*/
+.benefit-lead img, .benefit-brand img, .benefit-cost img {
+    display: block;
+    margin: 10px auto;
+    max-width: 150px;
 }
 
 footer {
     padding: 30px;
     clear: both;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', 'Arial', 'sans-serif';
     text-align: center;
 }
 
