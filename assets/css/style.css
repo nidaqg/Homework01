@@ -1,15 +1,19 @@
-/* Universal selector, effects entire UI*/
+/* Universal selector used to set border-box value.
+This will make it easier to manage individual element sizing
+and prevent common problems in layouts from occuring */
 * {
     box-sizing: border-box;
     padding: 0;
     margin: 0;
 }
-/* End of universal selctor*/
 
+/*Background color set for entire document other then the head*/
 body {
     background-color: #d9dcd6;
 }
 
+/*In header, used padding to increase size of entire element, set font-family 
+fallbacks and set background and font colors*/
 header {
     padding: 20px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
@@ -17,50 +21,55 @@ header {
     color: #ffffff;
 }
 
+/* Inline-block value lets us generate a horizontal element box as opposed to 
+vertical one*/
 header h1 {
     display: inline-block;
     font-size: 48px;
 }
 
+/*Inline element <span> used to get multiple font colors in single word*/
 header h1 .seo {
     color: #d9dcd6;
 }
 
-header nav {
+/*Nav element sized and floated right so it wraps around h1 element for a better visual design*/
+nav {
     padding-top: 15px;
-    margin-right: 20px;
+    margin-right: 20px; /*right margin set to clear area between nav element and edge of page*/
     float: right;
     font-family: 'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', 'sans-serif';
     font-size: 20px;
 }
-
-header nav ul {
+ /*Value 'none' used so prevent any visible bullet points in unordered list*/
+nav ul {
     list-style-type: none;
 }
 
-header nav ul li {
+nav ul li {
     display: inline-block;
     margin-left: 25px;
 }
 
+/*Set color for text of navigation links*/
 a {
     color: #ffffff;
     text-decoration: none;
-}
-/* Header CSS ends here*/
-
-p {
-    font-size: 16px;
 }
 
 /* Header image styling*/
 .header-image {
     height: 800px;
-    width: 100%;
-    margin-bottom: 25px;
-    background-image: url("../images/digital-marketing-meeting.jpg");
-    background-size: cover;
-    background-position: center;
+    width: 100%; /*This stretches container to edges of page*/
+    margin-bottom: 25px; /*clears space below container*/
+    background-image: url("../images/digital-marketing-meeting.jpg"); /*Sets image as background of container*/
+    background-size: cover; 
+    background-position: center; /*Centers image used as background*/
+}
+
+/*Sets font size for all p elements in html*/
+p {
+    font-size: 16px;
 }
 
 .float-left {
