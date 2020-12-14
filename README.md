@@ -1,4 +1,4 @@
-# Refactor code to make it accessible
+# Homework01: Refactor code to make it accessible
 
 This project was an on-the-job ticket that called for refactoring code from an existing static website (Horiseon Social Solution Services Inc.) to make it more accessible. Acessiblility in this context refers to modifying code to help people with disabilities better navigate a given webpage by maing it readable through the use of assistive technologies.
 Accessiblity is an important asspect of any technology, be it a dynamic application or a static webpage. Not only does it help people with disabilities navigate virtual space, making an application or webpage more accessible also helps businesses through better ranking by search engines. 
