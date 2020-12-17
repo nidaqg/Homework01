@@ -1,19 +1,13 @@
-/* Universal selector used to set border-box value.
-This will make it easier to manage individual element sizing
-and prevent common problems in layouts from occuring */
 * {
     box-sizing: border-box;
     padding: 0;
     margin: 0;
 }
 
-/*Background color set for entire document other then the head*/
 body {
     background-color: #d9dcd6;
 }
 
-/*In header, used padding to increase size of entire element, set font-family 
-fallbacks and set background and font colors*/
 header {
     padding: 20px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
@@ -36,7 +30,7 @@ h1 .seo {
 /*Nav element sized and floated right so it wraps around h1 element for a better visual design*/
 nav {
     padding-top: 15px;
-    margin-right: 20px; /*right margin set to clear area between nav element and edge of page*/
+    margin-right: 20px; 
     float: right;
     font-family: 'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', 'sans-serif';
     font-size: 20px;
@@ -46,8 +40,8 @@ ul {
     list-style-type: none;
 }
 
-/*Removed unnecessary combinators as there is only one ul in the html to style*/
-ul li {
+/*Removed unnecessary combinators as there is only one set pf il in the html to style*/
+li {
     display: inline-block;
     margin-left: 25px;
 }
