@@ -9,9 +9,12 @@ In this project I worked on accessiblity through a few different ways. Wherever 
 In the CSS file, I organized and consolidated selectors and properties to clean up the code and remove unnecessary repetition. I also removed unnecessarily selector grouping for the same reason.
 
 The following image shows the UI of the completed website:
+
 ![Code Refactor Demo](assets/horiseon-demo.png)
 
 Follow the link the deployed GitHub page:
+
+https://nidaqg.github.io/refactor-horiseon/
 
 
 
